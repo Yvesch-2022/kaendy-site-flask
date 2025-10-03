@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h2>📰 Actualités</h2>
+    <div class="news-grid">
+      {% for actu in content.news %}
+        <div class="news-card {% if not actu.image %}no-image{% endif %}">
+          {% if actu.image %}
+            <img src="{{ url_for('static', filename=actu.image) }}" alt="{{ actu.title }}">
+          {% endif %}
+          <h3>{{ actu.title }}</h3>
+          <small>{{ actu.date }}</small>
+          <p>{{ actu.text }}</p>
+          {% if actu.link %}
+            <a href="{{ actu.link }}" class="btn-ghost">En savoir plus</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

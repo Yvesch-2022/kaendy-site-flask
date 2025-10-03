@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ site.artist_name }} — Site Officiel</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;600&family=Raleway:wght@300;500&family=Poppins:wght@400;500&family=Great+Vibes&family=Bebas+Neue&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="topbar">
+    <div class="container brand">
+      <a href="/">{{ site.artist_name }}</a>
+      <nav class="menu">
+        <a href="/">Accueil</a>
+        <a href="/bio">Bio</a>
+        <a href="/music">Musique</a>
+        <a href="/news">Actus</a>
+        <a href="/gallery">Galerie</a>
+        <a href="/contact" class="btn-accent">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenu spécifique -->
+  {% block content %}{% endblock %}
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container socials">
+      {% for name, link in site.socials.items() %}
+        <a href="{{ link }}" target="_blank">{{ name }}</a>
+      {% endfor %}
+    </div>
+    <div class="copy">© 2025 {{ site.artist_name }}. Tous droits réservés.</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section container">
+  <h2>🎶 Musique</h2>
+
+  <!-- Bloc Spotify -->
+  <div class="embed-card">
+    <h3>Écouter sur Spotify</h3>
+    {% for s in content.music.spotify_embeds %}
+      <iframe style="border-radius:12px"
+              src="{{ s }}"
+              width="100%"
+              height="380"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+    {% endfor %}
+  </div>
+
+  <!-- Bloc Clips YouTube -->
+  <div class="embed-card">
+    <h3>Clips officiels (YouTube)</h3>
+    <div class="youtube-grid">
+      {% for y in content.music.youtube_embeds %}
+        <div class="youtube-item">
+          <iframe width="100%" height="220"
+                  src="{{ y }}"
+                  title="Clip officiel"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

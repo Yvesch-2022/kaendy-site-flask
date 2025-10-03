@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section container">
+  <h2>📸 Galerie Photo</h2>
+  <p class="lead">Moments capturés : scènes, studio, coulisses.</p>
+
+  <div class="gallery-grid">
+    {% for photo in content.gallery_photos %}
+      <figure class="gallery-item">
+        <div class="media">
+          <img src="{{ url_for('static', filename=photo.image) }}" alt="{{ photo.alt }}">
+        </div>
+        <figcaption>{{ photo.alt }}</figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section container">
+  <h2>📹 Galerie Vidéo</h2>
+  <p class="lead">Clips, extraits live, sessions acoustiques.</p>
+
+  <div class="video-grid">
+    {% for video in content.gallery_videos %}
+      <figure class="video-item">
+        <div class="media">
+          <video controls preload="metadata">
+            <source src="{{ url_for('static', filename=video.file) }}" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+        </div>
+        <figcaption>{{ video.alt }}</figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

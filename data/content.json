@@ -1,0 +1,83 @@
+{
+  "site": {
+    "artist_name": "Kaendy",
+    "tagline": "Artiste R&B francophone",
+    "email": "kyc1management@gmail.com",
+    "socials": {
+      "Instagram": "https://www.instagram.com/kaendy.music?utm_source=qr&igsh=anF4dTR1cWFkeXdp",
+      "TikTok": "https://www.tiktok.com/@iamkaendy?_t=ZN-90DklUXa9fK&_r=1",
+      "YouTube": "https://www.youtube.com/@kaendymusic9904",
+      "Spotify": "https://open.spotify.com/artist/3thRQ4NSDI6K9cbStVyANm?si=EDPpqzhqTRK4EDdqGw3nTQ",
+      "Deezer": "https://link.deezer.com/s/31bJwjxqbt38n3IJnQK0G",
+      "Apple Music": "https://music.apple.com/fr/artist/kaendy/1642163309"
+    },
+    "brand": {
+      "primary": "#0D0D0D",
+      "secondary": "#1C1C1C",
+      "text": "#FFFFFF",
+      "accent": "#D4AF37"
+    }
+  },
+  "home": {
+    "hero_image": "Yves-Le-Pecq-7.jpg",
+    "cta_primary_text": "Écouter « Je suis là »",
+    "cta_primary_url": "https://open.spotify.com/intl-fr/track/1SpHcrC6uzkfpKqRCzqexU?si=cb11f55d09134436",
+    "cta_secondary_text": "Voir les clips",
+    "cta_secondary_url": "/music",
+    "highlights": [
+      {
+        "title": "Je suis là",
+        "subtitle": "Single — 19 sept. 2025",
+        "url": "/music"
+      },
+      {
+        "title": "Clip officiel",
+        "subtitle": "Disponible sur YouTube",
+        "url": "/music#clips"
+      }
+    ]
+  },
+  "bio": {
+    "short": "Kaendy, artiste R&B francophone, mêle sensibilité, groove et mélodies modernes.",
+    "long": "Kaendy est un artiste R&B francophone qui raconte l’intime avec pudeur et précision. Porté par une voix chaleureuse et des productions modernes, il explore les sentiments qu’on n’ose pas dire. Son écriture directe frappe par sa justesse ; ses mélodies accrochent sans forcer..."
+  },
+  "music": {
+    "spotify_embeds": [
+      "https://open.spotify.com/embed/artist/3thRQ4NSDI6K9cbStVyANm?utm_source=generator"
+    ],
+    "youtube_embeds": [
+      "https://www.youtube.com/embed/nycCFvcKSBk",
+      "https://www.youtube.com/embed/ww4puw896Rs"
+    ],
+    "covers": [
+      { "title": "Je suis là", "image": "cover_jesuisla.jpg" },
+      { "title": "Cette nuit", "image": "cover_cettenuit.jpg" },
+      { "title": "Je ne dirais pas non", "image": "Capture d’écran 2025-09-30 135725.png" }
+    ]
+  },
+  "news": [
+    {
+      "date": "2025-09-19",
+      "title": "Sortie single « Je suis là »",
+      "text": "Disponible sur toutes les plateformes.",
+      "image": "Photo/Black White Aesthetic CD Album Cover.png",
+      "link": "/music"
+    },
+    {
+      "date": "2025-10-04",
+      "title": "Session acoustique",
+      "text": "Une vidéo live arrive bientôt.",
+      "image": "Photo/Concert.jpg"
+    }
+  ],
+  "gallery_photos": [
+    { "image": "Photo/Concert.jpg", "alt": "Kaendy en concert" },
+    { "image": "Photo/Yvesstudiotimidite.jpg", "alt": "Session studio" },
+    { "image": "Photo/Promo.webp", "alt": "Portrait promo" }
+  ],
+  "gallery_videos": [
+    { "file": "Video/Déclaration_Kaendy.mp4", "alt": "Clip officiel" },
+    { "file": "Video/20230722_142646 (1).mp4", "alt": "Live acoustique" },
+    { "file": "Video/VID-20220626-WA0004.mp4", "alt": "Live" }
+  ]
+}
